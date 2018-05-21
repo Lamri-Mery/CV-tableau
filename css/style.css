@@ -9,7 +9,7 @@ html {
 html,body{
 	display: block;
 	height: 100%; width: 100%;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 ul,li,a{
 	margin: 0; padding: 0;
@@ -38,12 +38,31 @@ table{
 	border-color: red;
 	margin: 1%;
 }
+td.right, td.left{
+	width: 49%;
+}
 
 td{
-	border-style: solid;
-	border-color: green;
+	/*border-style: solid;*/
+	/*border-color: green;*/
 }
 /*td:first-child, td:last-child{
 	width: 20px;
 	height: 20px;
 }*/
+td.left > table table:first-child {
+	margin-bottom: 25%;
+}
+td.left > table table:nth-child(2) {
+	margin-bottom: 25%;
+}
+td.left th:first-child {
+    width: 90px;
+}
+th{
+	text-align: left;
+	vertical-align: text-bottom;
+}
+table th[rowspan='2'] {
+    font-size: 38px;
+}
